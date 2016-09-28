@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/doraemon_game.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.0.0.js"></script>
+    <script type="text/javascript" src="scripts/doraemon_game.js"></script>
+	<title>Doraemon Game</title>
+</head>
+
+<body ng-controller="myCtrl">
+    <div id="doraemongame_gif" ng-show="doraemongameswitch1"><img src="images/doraemon.gif" ng-click="switchdoraemongame(false)"/> 
+        </div>
+        <div id="doraemongame_board" ng-show="doraemongameswitch2" style="background:url(images/background.jpg) no-repeat center">
+            <div id="doraemon" style="background:url(images/down1.png) no-repeat center" value="doraemon"></div>
+            <div id="nobita" style="background:url(images/nobita_down1.png) no-repeat center" value="nobita"></div>
+            <div id="sodarseller" ng-click="buycabbage()"></div>
+            <div id="cabbage" ng-show="getcabbage"><img src="images/cabbage.png"/></div>
+            <div id="sugar" ng-show="getsugar"><img id="sugarimg" src="images/sugar1.png"/></div>
+            <div id="bluebutterfly" ng-show="showbutterfly"><img src="images/bluebtf1.gif"/></div>
+            <div id="greenbuterfly" ng-show="showbutterfly"><img src="images/greenbtf1.gif"/></div>
+            <div id="eagle" ng-show="showeagle"><img src="images/bird.gif"/></div>
+            <div id="lamp"><img src="images/lamp.png"/></div>
+            <div id="stopsign"><img src="images/stopsign.png"/></div>
+            <div id="onewaysign"><img src="images/onewaysign.png"/></div>
+            <div id="dialogwindow" ng-show="showdialogwindow||showdialogwindow2"><img src="images/textbox.png" style="height:80%"/></div>
+            <div id="dialog_content" ng-show="showdialogwindow">Would you like a cabbage?
+               <ul>
+                   <li ng-click="selectdialog(true)">Yes</li>
+                   <li ng-click="selectdialog(false)">No</li>
+               </ul>
+            </div>
+            <div id="dialog_content2" ng-show="showdialogwindow2" ng-click="selectdialog(false)">Sold Out!Come tomorrow!</div>
+            <div id="switchtime_layer" ng-show="switchtime" style="background:url(images/switchtime.png)"></div>
+            <div id="afternoon_layer" ng-show="afternoon" style="background:url(images/afternoon.png)"></div>
+            <div id="night_layer" ng-show="night" style="background:url(images/night.png)"></div>
+            <div id="up_panel" style="background:url(images/up_panel.png) no-repeat center" ng-click="charactermoving('up')"></div>
+            <div id="down_panel" style="background:url(images/down_panel.png) no-repeat center" ng-click="charactermoving('down')"></div>
+            <div id="left_panel" style="background:url(images/left_panel.png) no-repeat center" ng-click="charactermoving('left')"></div>
+            <div id="right_panel" style="background:url(images/right_panel.png) no-repeat center" ng-click="charactermoving('right')"></div>
+            <div id="A_panel" style="background:url(images/A_panel.png) no-repeat center" ng-click="Abutton()"></div>
+            <div id="B_panel" style="background:url(images/B_panel.png) no-repeat center" ng-click="Bbutton()"></div>
+            <button id="doraemongamestartbtn" class="btn btn-info" ng-click="doraemongamestart()">Start Game</button>
+            <button id="switchtimebtn" class="btn btn-warning" ng-click="switchgametime()">Switch Time</button>
+            <button id="quitdoraemongamebtn" class="btn btn-success" ng-click="switchdoraemongame(true)">Quit Game</button>
+        </div>
+</body>
+</html>

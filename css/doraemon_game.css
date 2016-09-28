@@ -1,0 +1,285 @@
+#doraemongame_board{
+	width:1400px;
+	height:800px;
+	border-radius:8px;
+	border:2px solid gray;
+	position:relative;
+}
+
+#doraemongame_gif{
+	width:1400px;
+	height:800px;
+}
+
+#doraemongame_gif:hover{
+   cursor:pointer;
+}
+
+#doraemongamestartbtn{
+   	position:absolute;
+	left:550px;
+	bottom:30px;
+	z-index:20;
+}
+
+#switchtimebtn{
+    position:absolute;
+	left:700px;
+	bottom:30px;
+	z-index:20;
+}
+
+#quitdoraemongamebtn{
+	position:absolute;
+	left:850px;
+	bottom:30px;
+	z-index:20;
+}
+
+#doraemon{
+	position:absolute;
+	width:70px;
+	height:90px;
+	left:600px;
+	top:270px;
+	z-index:0; 
+}
+
+#nobita{
+	position:absolute;
+	width:80px;
+	height:122px;
+	left:200px;
+	top:350px;
+	z-index:0; 
+}
+
+#dialogwindow{
+   position:absolute;
+   width:300px;
+   height:200px;
+   left:400px;
+   top:200px;
+   z-index:20;
+}
+
+#dialog_content{
+   position:absolute;
+   width:500px;
+   height:200px;
+   left:420px;
+   top:210px;
+   font-size:30px;
+   color:white;
+   z-index:20; 
+}
+
+#dialog_content ul{
+   list-style: none;
+}
+
+#dialog_content ul li:hover{
+   width:300px;
+   background:#9adaf6;	
+   opacity:0.7;
+}
+
+#dialog_content2{
+   position:absolute;
+   width:500px;
+   height:200px;
+   left:420px;
+   top:210px;
+   font-size:30px;
+   color:white;
+   z-index:20;
+}
+
+#sodarseller{
+	position:absolute;
+	width:85px;
+	height:125px;
+	left:742px;
+	top:200px;
+	z-index:19;
+}
+
+#sodarseller:hover{
+    cursor:pointer;
+}
+
+#lamp{
+	position:absolute;
+	width:60px;
+	height:120px;
+	left:300px;
+	top:450px;
+	z-index:15;
+}
+
+#stopsign{
+	position:absolute;
+	width:56px;
+	height:102px;
+	left:700px;
+	top:450px;
+	z-index:15;
+}
+
+#onewaysign{
+	position:absolute;
+	width:48px;
+	height:106px;
+	left:1000px;
+	top:450px;
+	z-index:15;
+}
+
+#cabbage{
+	position:absolute;
+	width:50px;
+	height:38px;
+	left:790px;
+	top:280px;
+	z-index:0;
+}
+
+#sugar{
+	position:absolute;
+	width:32px;
+	height:33px;
+	left:650px;
+	top:280px;
+}
+
+#bluebutterfly{
+	position:absolute;
+	width:105px;
+	height:84px;
+	left:1200px;
+	top:230px;
+	z-index:17;
+}
+
+#greenbuterfly{
+	position:absolute;
+	width:105px;
+	height:84px;
+	left:50px;
+	top:350px;
+	z-index:17;
+}
+
+#eagle{
+	position:absolute;
+	width:70px;
+	height:56px;
+	left:0px;
+	top:0px;
+	z-index:17;
+}
+
+#up_panel{
+	position:absolute;
+	width:59px;
+	height:57px;
+	left:1000px;
+	bottom:150px;
+	z-index:20;
+}
+
+#up_panel:hover{
+    cursor:pointer;
+}
+
+#down_panel{
+	position:absolute;
+	width:59px;
+	height:57px;
+	left:1000px;
+	bottom:85px;
+	z-index:20;
+}
+
+#down_panel:hover{
+    cursor:pointer;
+}
+
+#left_panel{
+	position:absolute;
+	width:59px;
+	height:57px;
+	left:930px;
+	bottom:85px;
+	z-index:20;
+}
+
+#left_panel:hover{
+    cursor:pointer;
+}
+
+#right_panel{
+	position:absolute;
+	width:59px;
+	height:57px;
+	left:1070px;
+	bottom:85px;
+	z-index:20;
+}
+
+#right_panel:hover{
+    cursor:pointer;
+}
+
+#A_panel{
+	position:absolute;
+	width:59px;
+	height:57px;
+	left:1200px;
+	bottom:85px;
+	z-index:20;
+}
+
+#A_panel:hover{
+    cursor:pointer;
+}
+
+#B_panel{
+	position:absolute;
+	width:59px;
+	height:57px;
+	left:1270px;
+	bottom:85px;
+	z-index:20;
+}
+
+#B_panel:hover{
+    cursor:pointer;
+}
+
+#afternoon_layer{
+	position:absolute;
+	width:1400px;
+	height:800px;
+	left:0px;
+	top:0px;
+	z-index:18;
+}
+
+#switchtime_layer{
+	position:absolute;
+	width:1400px;
+	height:800px;
+	left:0px;
+	top:0px;
+	z-index:18;
+}
+
+#night_layer{
+	position:absolute;
+	width:1400px;
+	height:800px;
+	left:0px;
+	top:0px;
+	z-index:18;
+}
